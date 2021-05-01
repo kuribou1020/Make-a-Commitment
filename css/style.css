@@ -7,6 +7,10 @@ html, body {
   background-image: url("..//img/contents-image.png");
 }
 
+.all-wrapper {
+  overflow: hidden;
+}
+
 .before-wrapper {
   /* ヘッドラッパー */
   /* オーバービューラッパー */
@@ -22,6 +26,7 @@ html, body {
 }
 
 .before-wrapper .head-wrapper h1 {
+  width: 100%;
   position: absolute;
   top: 10%;
   left: 30%;
