@@ -1,7 +1,7 @@
 $(function() {
 
     // ナビゲーションメニューから該当箇所へスクロール //
-    $('.header-nav').click(function() {
+    $('.header-btn').click(function() {
         var position = $('.declear-wrapper').offset().top;
         $('html, body').animate({
             scrollTop: position
@@ -12,19 +12,19 @@ $(function() {
 
     // 目標を入力したときのアニメーション //
     $('.declear-btn').click(function(e) {
-        var goals = $('.declear-text').val();
-        if (goals === '') {
+        var goalText = $('.declear-text').val();
+        if (goalText === '') {
             alert('目標が入力されていません');
             e.preventDefault();
         } else {
             $('html, body').animate({
                 scrollTop: 0
-            }, 2500), ({
+            }, 1500), ({
                 queue: false
             });
-            $('.head-wrapper').hide();
-            $('.goals-wrapper').show();
-            $('.declear-content').text(goals);
+            $('.before-wrapper').hide();
+            $('.after-wrapper').show();
+            $('.declear-content').text(goalText);
         }
     });
 
@@ -38,8 +38,10 @@ $(function() {
 
     // 画像のスライダー //
     var mySwiper = new Swiper('.swiper-container', {
+        observer: true,
+        observeParents: true,
         autoplay: {
-            delay: 5000,
+            delay: 3000,
             stopOnLastSlide: false,
             disableOnInteraction: false,
             reverseDirection: false,
@@ -51,21 +53,9 @@ $(function() {
         }
     });
 
-    // スクロールに合わせて出てくるアニメーション //
-    $(window).scroll(function () {
-        $('.effect-fade').each(function () {
-            var elemPos = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
-            if (scroll > elemPos - windowHeight) {
-                if ($(this).hasClass('fade-up')) {
-                    $(this).addClass('effect-scroll');
-                }
-                if ($(this).hasClass('fade-down')) {
-                    $(this).addClass('effect-scroll');
-                }
-            }
-        });
-    });
+    // リロード //
+    $('.reload-btn').click(function () {
+        window.location.reload();
+    })
 
 });

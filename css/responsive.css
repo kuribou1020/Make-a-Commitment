@@ -1,129 +1,202 @@
-@media screen and (max-width: 700px) {
-  .head-wrapper {
-    height: 70vh;
-  }
-  .head-wrapper h1 {
-    margin: 0;
-    padding: 50px 0;
+@media screen and (max-width: 1200px) {
+  .before-wrapper .head-wrapper h1 {
+    top: 20%;
+    left: 50%;
+    font-size: 4.5rem;
     text-align: center;
   }
-  .header-nav {
+  .before-wrapper .head-wrapper .header-btn {
+    top: 30%;
+    left: 50%;
     display: block;
-    width: 30%;
     margin: 0 auto;
-    text-align: center;
-    font-size: 3vw;
   }
-  .head-wrapper h2 {
-    font-size: 4vw;
-    padding: 100px 0;
+  .before-wrapper .head-wrapper h2 {
+    font-size: 4rem;
   }
-  .goals-wrapper h2 {
+  .before-wrapper .overview-wrapper {
+    margin: 50px auto 0;
     padding: 50px 0;
   }
-  .goals-wrapper p {
+  .before-wrapper .overview-wrapper h2 {
+    font-size: 3.2rem;
+  }
+  .before-wrapper .overview-wrapper p {
+    width: 90%;
+    font-size: 1.6rem;
+    margin: 0 auto;
+  }
+  .before-wrapper .message-wrapper {
+    margin: 50px auto 0;
+  }
+  .before-wrapper .message-wrapper .message-text h3 {
+    font-size: 2.8rem;
+  }
+  .before-wrapper .message-wrapper .message-text p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  .before-wrapper .declear-wrapper {
+    margin: 50px auto 0;
+  }
+  .before-wrapper .declear-wrapper .declear-container {
+    padding: 20px 0;
+  }
+  .before-wrapper .declear-wrapper .declear-container h2 {
+    font-size: 2.6rem;
+  }
+  .before-wrapper .declear-wrapper .declear-container h3 {
+    font-size: 2.4rem;
+  }
+  .before-wrapper .declear-wrapper .declear-container .declear-text {
+    font-size: 1.8rem;
+  }
+  .after-wrapper .goal-wrapper h2 {
+    padding: 50px 0;
+  }
+  .after-wrapper .goal-wrapper .goals-wrapper p {
     padding-bottom: 100px;
   }
-  .overview-wrapper {
+  .after-wrapper .shere-wrapper {
+    margin: 50px auto 0;
+  }
+  .after-wrapper .shere-wrapper h2 {
+    font-size: 2.2rem;
+  }
+  .after-wrapper .shere-wrapper .sns-icons li {
+    width: 80px;
+    height: 80px;
+  }
+  .after-wrapper .shere-wrapper .sns-icons li .fab {
+    font-size: 4.5rem;
+  }
+  .after-wrapper .last-message-wrapper {
+    margin: 50px auto 0;
+  }
+  .after-wrapper .last-message-wrapper .swiper-container {
+    height: 350px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .before-wrapper .head-wrapper h1 {
+    padding: 50px 0;
+    font-size: 3.2rem;
+    text-align: center;
+  }
+  .before-wrapper .head-wrapper .header-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .before-wrapper .head-wrapper h2 {
+    font-size: 3rem;
+    padding: 50px 0;
+  }
+  .before-wrapper .overview-wrapper {
     margin: 50px auto 0;
     padding: 50px 0;
   }
-  .overview-wrapper p {
+  .before-wrapper .overview-wrapper h2 {
+    font-size: 3.2rem;
+  }
+  .before-wrapper .overview-wrapper p {
     width: 90%;
+    font-size: 1.6rem;
     margin: 0 auto;
   }
-  .message-wrapper {
+  .before-wrapper .message-wrapper {
     margin: 50px auto 0;
+    text-align: center;
   }
-  .message1 {
+  .before-wrapper .message-wrapper .message {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
   }
-  .message1-image {
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+  .before-wrapper .message-wrapper .message-image {
     width: 100%;
-    padding: 20px 0;
-  }
-  .message1-text {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    width: 90%;
-    margin: 0 auto;
-    padding: 10px;
+    padding: 0;
   }
-  .message2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .before-wrapper .message-wrapper .message-text {
+    padding: 30px 0;
     width: 100%;
-  }
-  .message2-image {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    width: 100%;
-    padding: 20px 0;
   }
-  .message2-text {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  .before-wrapper .message-wrapper .message-text h3 {
+    font-size: 2.6rem;
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+  .before-wrapper .message-wrapper .message-text p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    text-align: center;
     width: 90%;
     margin: 0 auto;
-    padding: 10px;
   }
-  .declear-wrapper {
+  .before-wrapper .declear-wrapper {
     margin: 50px auto 0;
+    width: 80%;
   }
-  .declear-container {
-    width: 100%;
+  .before-wrapper .declear-wrapper .declear-container {
     padding: 20px 0;
   }
-  .declear-container h2 {
-    font-size: 3vw;
+  .before-wrapper .declear-wrapper .declear-container h2 {
+    font-size: 1.6rem;
+    padding: 10px;
   }
-  .declear-container h3 {
-    font-size: 3vw;
+  .before-wrapper .declear-wrapper .declear-container h3 {
+    font-size: 1.4rem;
   }
-  .declear-container form {
-    padding: 20px 0;
+  .before-wrapper .declear-wrapper .declear-container .declear-text {
+    font-size: 1.6rem;
   }
-  .declear-text {
-    height: 1.5rem;
-  }
-  .declear-btn {
+  .before-wrapper .declear-wrapper .declear-container .declear-btn {
     padding: 10px 30px;
   }
-  .shere-wrapper {
+  .after-wrapper .goal-wrapper h2 {
+    padding: 50px 0;
+  }
+  .after-wrapper .goal-wrapper p {
+    padding-bottom: 100px;
+  }
+  .after-wrapper .shere-wrapper {
     margin: 50px auto 0;
   }
-  .sns-icons li {
-    width: 50px;
-    height: 50px;
+  .after-wrapper .shere-wrapper h2 {
+    font-size: 2rem;
+  }
+  .after-wrapper .shere-wrapper .sns-icons li {
+    width: 60px;
+    height: 60px;
     margin: 0 15px;
   }
-  .twitter {
-    font-size: 1.5em;
+  .after-wrapper .shere-wrapper .sns-icons li .fab {
+    font-size: 3.2rem;
   }
-  .facebook {
-    font-size: 1.5em;
-  }
-  .instagram {
-    font-size: 1.5em;
-  }
-  .last-message-wrapper {
+  .after-wrapper .last-message-wrapper {
+    width: 80%;
     margin: 50px auto 0;
   }
-  .swiper-container {
-    width: 100%;
+  .after-wrapper .last-message-wrapper h2 {
+    font-size: 2rem;
+  }
+  .after-wrapper .last-message-wrapper .swiper-container {
     height: 200px;
   }
+  footer {
+    margin-top: 30px;
+  }
+  footer p {
+    font-size: 1.2rem;
+  }
 }
-/*# sourceMappingURL=responsive.css.map */
